@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Health FYI Embed Widgets — Anatomy, Pills, Drugs, Nutrition for Any Website</title>
+  <meta name="description" content="Embed Health FYI widgets — 14,692 anatomical structures, FDA pill database, drug interactions, nutrition data — on any website. 4 npm packages, evidence-based references, free CDN. Educational use only.">
+  <meta name="theme-color" content="#E11D48">
+  <meta name="keywords" content="anatomy widget, pill identifier widget, drug widget, nutrition widget, embed, oembed, shadow dom, fyipedia, healthfyi, bodyfyi">
+
+  <meta property="og:title" content="Health FYI Embed Widgets — 4 Site Family of Body/Drug/Nutrition Reference">
+  <meta property="og:description" content="Embed anatomy, pill identification, drug interaction, and nutrition widgets from the Health FYI family. Educational reference, not medical advice.">
+  <meta property="og:url" content="https://widget.bodyfyi.com">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://bodyfyi.com/static/og/homepage.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:site_name" content="Health FYI">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Health FYI Embed Widgets — anatomy/pills/drugs/nutrition reference">
+  <meta name="twitter:description" content="Educational health reference widgets. Embed in one line of HTML.">
+  <meta name="twitter:image" content="https://bodyfyi.com/static/og/homepage.png">
+
+  <link rel="canonical" href="https://widget.bodyfyi.com">
+  <meta name="author" content="FYIPedia">
+  <meta name="robots" content="index, follow">
+
+  <link rel="icon" href="https://bodyfyi.com/static/favicon.ico" sizes="32x32">
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {"@type": "WebApplication", "name": "Health FYI Embed Widgets", "url": "https://widget.bodyfyi.com", "applicationCategory": "EducationalApplication", "operatingSystem": "Web", "description": "Family of 4 embeddable widget packages for health reference: AnatomyFYI, PillFYI, DrugFYI, NutriFYI. Educational reference based on authoritative sources (FDA, USDA, Terminologia Anatomica). NOT medical advice.", "publisher": {"@type": "Organization", "name": "FYIPedia", "url": "https://fyipedia.com"}, "isPartOf": {"@type": "WebSite", "name": "Health FYI", "url": "https://bodyfyi.com"}},
+      {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "FYIPedia", "item": "https://fyipedia.com"}, {"@type": "ListItem", "position": 2, "name": "Health FYI", "item": "https://bodyfyi.com"}, {"@type": "ListItem", "position": 3, "name": "Widget Family Docs"}]},
+      {"@type": "ItemList", "name": "Health FYI Embed Packages", "numberOfItems": 4, "itemListElement": [
+        {"@type": "SoftwareSourceCode", "name": "anatomyfyi-embed", "url": "https://www.npmjs.com/package/anatomyfyi-embed", "codeRepository": "https://github.com/fyipedia/anatomyfyi-embed", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT"},
+        {"@type": "SoftwareSourceCode", "name": "pillfyi-embed", "url": "https://www.npmjs.com/package/pillfyi-embed", "codeRepository": "https://github.com/fyipedia/pillfyi-embed", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT"},
+        {"@type": "SoftwareSourceCode", "name": "drugfyi-embed", "url": "https://www.npmjs.com/package/drugfyi-embed", "codeRepository": "https://github.com/fyipedia/drugfyi-embed", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT"},
+        {"@type": "SoftwareSourceCode", "name": "nutrifyi-embed", "url": "https://www.npmjs.com/package/nutrifyi-embed", "codeRepository": "https://github.com/fyipedia/nutrifyi-embed", "programmingLanguage": "TypeScript", "license": "https://opensource.org/licenses/MIT"}
+      ]},
+      {"@type": "FAQPage", "mainEntity": [
+        {"@type": "Question", "name": "What data sources does Health FYI use?", "acceptedAnswer": {"@type": "Answer", "text": "Authoritative sources: AnatomyFYI uses Terminologia Anatomica (FCAT/FIPAT) for 14,692 anatomical structures. PillFYI uses FDA NDC + DailyMed for pill identification. DrugFYI sources DrugBank + RxNorm for interactions. NutriFYI uses USDA FoodData Central. All widgets show data provenance and reference links."}},
+        {"@type": "Question", "name": "Is this medical advice?", "acceptedAnswer": {"@type": "Answer", "text": "NO. Health FYI widgets are for educational reference only. Always consult a qualified healthcare professional for medical advice, diagnosis, or treatment. Do not rely on widgets for decisions about medication, dosage, drug interactions, or health conditions. Each widget displays a disclaimer."}},
+        {"@type": "Question", "name": "How accurate is pill identification?", "acceptedAnswer": {"@type": "Answer", "text": "PillFYI matches imprint code + color + shape against FDA NDC database. Confidence-scored matches. ALWAYS verify with pharmacist before consuming any pill. Misidentification risks are real — widgets shown are educational not diagnostic."}},
+        {"@type": "Question", "name": "How does DrugFYI handle drug interactions?", "acceptedAnswer": {"@type": "Answer", "text": "DrugFYI references DrugBank for known interactions: pharmacokinetic (absorption, metabolism via CYP enzymes), pharmacodynamic (receptor-level), CYP450 inducers/inhibitors, contraindications. Severity: Major/Moderate/Minor. Always confirm with prescribing physician."}},
+        {"@type": "Question", "name": "Are nutrition values in NutriFYI per 100g or per serving?", "acceptedAnswer": {"@type": "Answer", "text": "Per USDA standard: per 100g for most foods. Widgets display both per-100g and per-typical-serving where defined. Macronutrients (carbs/protein/fat/fiber), micronutrients (vitamins A-K, minerals), glycemic index. Recipe ingredient cross-references."}}
+      ]}
+    ]
+  }
+  </script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>tailwind.config = { darkMode: 'class', theme: { extend: { colors: { accent: '#E11D48' }, fontFamily: { mono: ['"JetBrains Mono"', 'ui-monospace', 'monospace'] } } } }</script>
+  <script>(function(){var t = localStorage.getItem('theme'); if (t === 'dark' || (!t && window.matchMedia('(prefers-color-scheme: dark)').matches)) document.documentElement.classList.add('dark');})();</script>
+  <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.14.9/dist/cdn.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/anatomyfyi-embed@1/dist/embed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/pillfyi-embed@1/dist/embed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/drugfyi-embed@1/dist/embed.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/nutrifyi-embed@1/dist/embed.min.js"></script>
+
+  <style>
+    [x-cloak]{display:none!important}
+    :root{--accent:#E11D48} .accent-text{color:var(--accent)} .accent-bg{background-color:var(--accent)}
+    pre{tab-size:2;margin:0}
+    .code-block{background:#0f172a;color:#e2e8f0;border-radius:8px;padding:1rem;font-size:13px;line-height:1.7;overflow-x:auto;font-family:'JetBrains Mono',ui-monospace,monospace}
+    .hl-tag{color:#7dd3fc} .hl-attr{color:#86efac} .hl-val{color:#fde68a}
+    .site-card { transition: all 0.2s; } .site-card:hover { transform: translateY(-2px); box-shadow: 0 10px 30px -10px rgba(225, 29, 72, 0.3); }
+  </style>
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased dark:bg-slate-950 dark:text-slate-100">
+
+  <!-- ⚠️ MEDICAL DISCLAIMER BANNER (sticky top, always visible) -->
+  <div class="bg-rose-50 dark:bg-rose-950/30 border-b border-rose-200 dark:border-rose-800 text-rose-900 dark:text-rose-200 text-sm py-2 px-4 text-center">
+    <strong>⚠ Educational reference only.</strong> Not medical advice. Always consult a qualified healthcare professional before making decisions about medication, dosage, or treatment.
+  </div>
+
+  <header class="bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800 sticky top-0 z-50">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 h-14 flex items-center justify-between">
+      <a href="https://bodyfyi.com" class="flex items-center gap-2 font-bold text-lg" style="color: #E11D48">
+        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"/></svg>
+        <span>Health FYI</span>
+        <span class="text-xs font-normal text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-2 py-0.5 rounded-full font-sans">Widget Family</span>
+      </a>
+      <nav class="hidden sm:flex items-center gap-6 text-sm text-slate-600 dark:text-slate-400">
+        <a href="#sites" class="hover:text-accent">4 Sites</a>
+        <a href="#disclaimer" class="hover:text-accent text-rose-600 dark:text-rose-400">⚠ Disclaimer</a>
+        <a href="#faq" class="hover:text-accent">FAQ</a>
+        <a href="https://github.com/fyipedia" class="hover:text-accent" target="_blank" rel="noopener">GitHub ↗</a>
+      </nav>
+    </div>
+  </header>
+
+  <section class="bg-gradient-to-br from-rose-50 via-white to-pink-50 dark:from-slate-900 dark:via-slate-950 dark:to-slate-900 border-b border-slate-200 dark:border-slate-800">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 py-16 sm:py-20 text-center">
+      <span class="inline-block px-3 py-1 text-xs font-semibold tracking-wider uppercase rounded-full" style="background: #E11D48; color: white">4 Widget Packages · Educational Reference</span>
+      <h1 class="mt-6 text-4xl sm:text-5xl font-bold tracking-tight">Health FYI <span class="accent-text">Embed Widgets</span></h1>
+      <p class="mt-6 text-lg sm:text-xl text-slate-600 dark:text-slate-400 max-w-3xl mx-auto leading-relaxed">
+        Embed <a href="https://anatomyfyi.com" class="accent-text font-semibold hover:underline">anatomy</a>,
+        <a href="https://pillfyi.com" class="accent-text font-semibold hover:underline">pill identification</a>,
+        <a href="https://drugfyi.com" class="accent-text font-semibold hover:underline">drug references</a>, and
+        <a href="https://nutrifyi.com" class="accent-text font-semibold hover:underline">nutrition data</a>
+        in any website.
+      </p>
+      <p class="mt-4 text-base text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
+        FDA + USDA + DrugBank + Terminologia Anatomica references. <strong class="text-rose-600 dark:text-rose-400">Educational only — not medical advice.</strong>
+      </p>
+      <div class="mt-8 flex flex-wrap justify-center gap-3">
+        <a href="#quick-start" class="px-5 py-2.5 rounded-lg font-medium accent-bg text-white hover:opacity-90 transition">Get Started</a>
+        <a href="https://bodyfyi.com" class="px-5 py-2.5 rounded-lg font-medium border border-slate-300 dark:border-slate-700 hover:bg-slate-100 dark:hover:bg-slate-800 transition">Browse Health FYI →</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="sites" class="py-16 sm:py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-center">The Health FYI Family</h2>
+      <p class="mt-3 text-center text-slate-600 dark:text-slate-400 max-w-2xl mx-auto">Four sites covering body, medication, and nutrition reference — each backed by authoritative data sources.</p>
+
+      <div class="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: #E11D48">A</div>
+            <div><h3 class="font-bold text-lg"><a href="https://anatomyfyi.com" class="accent-text hover:underline">AnatomyFYI</a></h3><p class="text-xs text-slate-500">anatomyfyi.com · <a href="https://www.npmjs.com/package/anatomyfyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>14,692 anatomical structures</strong> · Terminologia Anatomica · 12 body systems · organs · tissues · cross-references between systems.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://anatomyfyi.com/structures/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Structures</a>
+            <a href="https://anatomyfyi.com/systems/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">12 Systems</a>
+            <a href="https://anatomyfyi.com/glossary/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Glossary</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: #14B8A6">P</div>
+            <div><h3 class="font-bold text-lg"><a href="https://pillfyi.com" class="accent-text hover:underline">PillFYI</a></h3><p class="text-xs text-slate-500">pillfyi.com · <a href="https://www.npmjs.com/package/pillfyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>FDA NDC + DailyMed</strong> · pill imprint code matching · color + shape + size · confidence-scored. <strong class="text-rose-600">Educational only — verify with pharmacist.</strong></p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://pillfyi.com/pills/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Browse</a>
+            <a href="https://pillfyi.com/tools/identifier/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Identifier</a>
+            <a href="https://pillfyi.com/glossary/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Glossary</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: #2DD4BF">D</div>
+            <div><h3 class="font-bold text-lg"><a href="https://drugfyi.com" class="accent-text hover:underline">DrugFYI</a></h3><p class="text-xs text-slate-500">drugfyi.com · <a href="https://www.npmjs.com/package/drugfyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>DrugBank + RxNorm</strong> · drug interactions · CYP450 enzymes · contraindications · pharmacokinetics. <strong class="text-rose-600">Confirm with prescribing physician.</strong></p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://drugfyi.com/drugs/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Drugs</a>
+            <a href="https://drugfyi.com/interactions/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Interactions</a>
+            <a href="https://drugfyi.com/glossary/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Glossary</a>
+          </div>
+        </article>
+
+        <article class="site-card p-6 rounded-xl border border-slate-200 dark:border-slate-800 bg-slate-50 dark:bg-slate-950">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: #22C55E">N</div>
+            <div><h3 class="font-bold text-lg"><a href="https://nutrifyi.com" class="accent-text hover:underline">NutriFYI</a></h3><p class="text-xs text-slate-500">nutrifyi.com · <a href="https://www.npmjs.com/package/nutrifyi-embed" target="_blank" rel="noopener" class="hover:underline">npm</a></p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400"><strong>USDA FoodData Central</strong> · macros · vitamins A-K · minerals · glycemic index · per-100g + per-serving · recipe cross-refs.</p>
+          <div class="mt-4 flex flex-wrap gap-2 text-xs">
+            <a href="https://nutrifyi.com/foods/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Foods</a>
+            <a href="https://nutrifyi.com/tools/calculator/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Calculator</a>
+            <a href="https://nutrifyi.com/glossary/" class="px-2 py-1 rounded bg-rose-100 text-rose-700 dark:bg-rose-900/30 dark:text-rose-300 hover:bg-rose-200">Glossary</a>
+          </div>
+        </article>
+
+        <article class="site-card md:col-span-2 p-6 rounded-xl border-2 border-dashed border-rose-300 dark:border-rose-700 bg-rose-50 dark:bg-rose-950/30">
+          <div class="flex items-center gap-3 mb-3">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center text-white text-lg font-bold" style="background: linear-gradient(135deg, #6366F1, #8B5CF6)">∞</div>
+            <div><h3 class="font-bold text-lg"><a href="https://fyipedia.com" class="accent-text hover:underline">FYIPedia Umbrella</a></h3><p class="text-xs text-slate-500">Health FYI is 1 of 11 FYI Families</p></div>
+          </div>
+          <p class="text-sm text-slate-600 dark:text-slate-400">Cross-references: <a href="https://widget.naturefyi.com" class="accent-text hover:underline">Nature FYI</a> (medicinal plants), <a href="https://widget.toolfyi.com" class="accent-text hover:underline">Utility FYI</a> (unit conversion for doses), <a href="https://widget.creativefyi.com" class="accent-text hover:underline">Creative FYI</a> (color for anatomy diagrams).</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- DISCLAIMER SECTION (full) -->
+  <section id="disclaimer" class="py-16 sm:py-20 bg-rose-50 dark:bg-rose-950/30 border-y border-rose-200 dark:border-rose-800">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="text-3xl font-bold text-rose-900 dark:text-rose-200">⚠ Medical Disclaimer</h2>
+      <div class="mt-6 text-left space-y-4 text-slate-700 dark:text-slate-300">
+        <p><strong>Health FYI widgets are for educational reference only.</strong> They do not provide medical advice, diagnosis, or treatment recommendations.</p>
+        <p>Always consult a qualified healthcare professional (physician, pharmacist, registered dietitian) before:</p>
+        <ul class="list-disc pl-6 space-y-1">
+          <li>Taking any medication or changing dosage</li>
+          <li>Combining medications (drug interactions)</li>
+          <li>Identifying an unknown pill — verify with a licensed pharmacist</li>
+          <li>Making dietary changes for a medical condition</li>
+          <li>Diagnosing symptoms based on anatomical reference</li>
+        </ul>
+        <p>If you are experiencing a medical emergency, call your local emergency services immediately. In the US, call 911. In Korea, 119.</p>
+        <p>Data sources (FDA NDC, USDA FoodData Central, DrugBank, RxNorm, Terminologia Anatomica) are authoritative but data may be incomplete or outdated. Treatments and contraindications vary by jurisdiction, patient history, and individual factors.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="quick-start" class="py-16 sm:py-20 bg-white dark:bg-slate-900">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-center">Quick Start</h2>
+      <div class="mt-8 max-w-3xl mx-auto">
+        <pre class="code-block"><code><span class="hl-tag">&lt;script</span> <span class="hl-attr">src</span>=<span class="hl-val">"https://cdn.jsdelivr.net/npm/anatomyfyi-embed@1/dist/embed.min.js"</span><span class="hl-tag">&gt;&lt;/script&gt;</span>
+<span class="hl-tag">&lt;div</span> <span class="hl-attr">data-anatomyfyi</span>=<span class="hl-val">"entity"</span> <span class="hl-attr">data-slug</span>=<span class="hl-val">"heart"</span><span class="hl-tag">&gt;&lt;/div&gt;</span></code></pre>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="py-16 sm:py-20 bg-slate-50 dark:bg-slate-950">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6">
+      <h2 class="text-3xl font-bold text-center">FAQ</h2>
+      <div class="mt-10 space-y-4">
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"><summary class="font-semibold cursor-pointer">What data sources does Health FYI use?</summary><p class="mt-3 text-slate-600 dark:text-slate-400"><a href="https://anatomyfyi.com" class="accent-text hover:underline">AnatomyFYI</a> uses Terminologia Anatomica (FCAT/FIPAT). <a href="https://pillfyi.com" class="accent-text hover:underline">PillFYI</a> uses FDA NDC + DailyMed. <a href="https://drugfyi.com" class="accent-text hover:underline">DrugFYI</a> sources DrugBank + RxNorm. <a href="https://nutrifyi.com" class="accent-text hover:underline">NutriFYI</a> uses USDA FoodData Central.</p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"><summary class="font-semibold cursor-pointer text-rose-700 dark:text-rose-300">Is this medical advice?</summary><p class="mt-3 text-slate-600 dark:text-slate-400"><strong>NO.</strong> Educational reference only. Always consult a qualified healthcare professional. See <a href="#disclaimer" class="accent-text hover:underline">full disclaimer</a>.</p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"><summary class="font-semibold cursor-pointer">How accurate is pill identification?</summary><p class="mt-3 text-slate-600 dark:text-slate-400"><a href="https://pillfyi.com" class="accent-text hover:underline">PillFYI</a> matches imprint code + color + shape against FDA NDC. Confidence-scored. <strong>ALWAYS verify with pharmacist</strong> before consuming any pill.</p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"><summary class="font-semibold cursor-pointer">How does DrugFYI handle drug interactions?</summary><p class="mt-3 text-slate-600 dark:text-slate-400">References DrugBank: pharmacokinetic + pharmacodynamic interactions, CYP450 enzymes, contraindications. Severity Major/Moderate/Minor. <strong>Always confirm with prescribing physician.</strong></p></details>
+        <details class="p-5 rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900"><summary class="font-semibold cursor-pointer">Are nutrition values per 100g or per serving?</summary><p class="mt-3 text-slate-600 dark:text-slate-400"><a href="https://nutrifyi.com" class="accent-text hover:underline">NutriFYI</a> per USDA standard: per 100g for most foods, with per-typical-serving where defined. Macros, vitamins A-K, minerals, glycemic index.</p></details>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-white dark:bg-slate-900 border-t border-slate-200 dark:border-slate-800 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+        <div><h3 class="font-bold mb-3">Health FYI</h3><ul class="space-y-2 text-slate-600 dark:text-slate-400"><li><a href="https://anatomyfyi.com" class="hover:accent-text">AnatomyFYI</a></li><li><a href="https://pillfyi.com" class="hover:accent-text">PillFYI</a></li><li><a href="https://drugfyi.com" class="hover:accent-text">DrugFYI</a></li><li><a href="https://nutrifyi.com" class="hover:accent-text">NutriFYI</a></li></ul></div>
+        <div><h3 class="font-bold mb-3">Widget Docs</h3><ul class="space-y-2 text-slate-600 dark:text-slate-400"><li><a href="https://widget.anatomyfyi.com" class="hover:accent-text">widget.anatomyfyi.com</a></li><li><a href="https://widget.pillfyi.com" class="hover:accent-text">widget.pillfyi.com</a></li><li><a href="https://widget.drugfyi.com" class="hover:accent-text">widget.drugfyi.com</a></li><li><a href="https://widget.nutrifyi.com" class="hover:accent-text">widget.nutrifyi.com</a></li></ul></div>
+        <div><h3 class="font-bold mb-3">npm Packages</h3><ul class="space-y-2 text-slate-600 dark:text-slate-400"><li><a href="https://www.npmjs.com/package/anatomyfyi-embed" target="_blank" rel="noopener" class="hover:accent-text">anatomyfyi-embed</a></li><li><a href="https://www.npmjs.com/package/pillfyi-embed" target="_blank" rel="noopener" class="hover:accent-text">pillfyi-embed</a></li><li><a href="https://www.npmjs.com/package/drugfyi-embed" target="_blank" rel="noopener" class="hover:accent-text">drugfyi-embed</a></li><li><a href="https://www.npmjs.com/package/nutrifyi-embed" target="_blank" rel="noopener" class="hover:accent-text">nutrifyi-embed</a></li></ul></div>
+        <div><h3 class="font-bold mb-3">Sister Families</h3><ul class="space-y-2 text-slate-600 dark:text-slate-400"><li><a href="https://fyipedia.com" class="hover:accent-text">FYIPedia</a></li><li><a href="https://widget.creativefyi.com" class="hover:accent-text">Creative FYI</a></li><li><a href="https://widget.naturefyi.com" class="hover:accent-text">Nature FYI</a></li><li><a href="https://widget.labfyi.com" class="hover:accent-text">Science FYI</a></li><li><a href="https://widget.toolfyi.com" class="hover:accent-text">Utility FYI</a></li><li><a href="https://widget.tagfyi.com" class="hover:accent-text">Tag FYI</a></li></ul></div>
+      </div>
+      <div class="mt-8 pt-6 border-t border-slate-200 dark:border-slate-800 text-sm text-slate-500 dark:text-slate-400 flex flex-wrap items-center justify-between gap-4">
+        <p>Built with care by <a href="https://fyipedia.com" class="accent-text hover:underline">FYIPedia</a>. MIT licensed.</p>
+        <p class="text-rose-600 dark:text-rose-400"><strong>Educational only — not medical advice.</strong></p>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
